@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'io.qameta.allure' version '2.11.2' // https://plugins.gradle.org/plugin/io.qameta.allure
+    id "io.qameta.allure" version "2.11.2" // https://plugins.gradle.org/plugin/io.qameta.allure
 }
 
 group 'org.example'
@@ -14,13 +14,13 @@ ext {
 
 allure {
     report { //секция репорта
-        version.set("${allureVersion}") // https://github.com/allure-framework/allure2
+        version.set("2.19.0") // https://github.com/allure-framework/allure2
     }
     adapter { // отвечает за появление папочки build/allure-results
         aspectjWeaver.set(true) //обработка аннотации @Step
         frameworks {
             junit5 { //название фреймворка
-                adapterVersion.set("${allureVersion}") //https://github.com/allure-framework/allure-java
+                adapterVersion.set("2.19.0") //https://github.com/allure-framework/allure-java
             }
         }
     }
