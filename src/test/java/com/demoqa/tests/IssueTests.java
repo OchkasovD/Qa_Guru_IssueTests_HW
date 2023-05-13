@@ -33,7 +33,7 @@ public class IssueTests extends TestBase {
 
 
     @Test
-    @DisplayName("Проверка имени ISSUE ISSUE_NUMBER Selenide" )
+    @DisplayName("Методом Selenide" )
     @Owner("OchkasovD")
     @Severity(SeverityLevel.BLOCKER)
     public void testIssueSearch() {
@@ -44,7 +44,7 @@ public class IssueTests extends TestBase {
     }
 
     @Test
-    @DisplayName("Проверка имени ISSUE с номером методом Лямбда шаги через step")
+    @DisplayName("Методом Лямбда шаги через step")
     public void testIssueLambdaStep(){
 
       step("Search Repository" + REPOSITORY, () -> {
@@ -63,7 +63,7 @@ public class IssueTests extends TestBase {
     }
 
     @Test
-    @DisplayName("Проверка имени ISSUE с номером методом шаги аннотацией step")
+    @DisplayName("Метод аннотацией step")
     public void testIssueStepAnnotated () {
         mainPage.searchRepository(REPOSITORY);
         searchResult.clickOnRepositoryLink(REPOSITORY);
