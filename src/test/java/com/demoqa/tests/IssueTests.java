@@ -45,7 +45,7 @@ public class IssueTests extends TestBase {
 
     @Test
     @DisplayName("Проверка имени ISSUE с номером методом Лямбда шаги через step")
-public void testIssueLambdaStep(){
+    public void testIssueLambdaStep(){
 
       step("Search Repository" + REPOSITORY, () -> {
           $(".header-search-input").setValue(REPOSITORY);
