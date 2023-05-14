@@ -11,6 +11,6 @@ build/
 *.iws
 *.iml
 *.ipr
-
+*.xml
 ### Gradle ###
 .gradle
